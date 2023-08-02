@@ -1,6 +1,6 @@
 export const pageData: Record<string, Record<string, string>> = {
   '/index.html': {
-    cssFile: 'dasd',
+    cssFile: '',
     greetings: 'Как дела?'
   },
 };

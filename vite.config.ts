@@ -1,7 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig, Plugin } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
-import { pageData } from './src/constants';
+import { pageData } from './src/constants.ts';
 
 export default defineConfig({
   root: resolve(__dirname, 'src'),
