@@ -11,8 +11,10 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, 'src/index.html'),
         login: resolve(__dirname, 'src/pages/login/login.html'),
+        register: resolve(__dirname, 'src/pages/register/register.html'),
         profile: resolve(__dirname, 'src/pages/profile/profile.html'),
         500: resolve(__dirname, 'src/pages/500/500.html'),
+        400: resolve(__dirname, 'src/pages/400/400.html'),
       }
     }
   },
@@ -21,7 +23,7 @@ export default defineConfig({
   },
   plugins: [
     handlebars({
-      partialDirectory: resolve(__dirname, 'src/components'),
+      partialDirectory: [resolve(__dirname, 'src/components'), resolve(__dirname, 'src/modules')],
       context(pagePath) {
         return pageData[pagePath];
       },

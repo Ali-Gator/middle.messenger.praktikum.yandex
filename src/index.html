@@ -1,7 +1,7 @@
 {{#> head/head }}
-  <div class="content-center">
-    <a href="/pages/login/login.html" class="link login__link">Login</a>
-    <a href="/pages/profile/profile.html" class="link login__link">Profile</a>
-    <a href="/pages/500/500.html" class="link login__link">Error 500</a>
-  </div>
+  <ul class="index content-center">
+    {{#each links}}
+      <li>{{>link/link this}}</li>
+    {{/each}}
+  </ul>
 {{/head/head}}

@@ -1,0 +1,25 @@
+.link {
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.side-back {
+  position: relative;
+  width: 64px;
+  min-height: 100vh;
+  background: var(--another-gray);
+}
+
+.side-back::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  content: '';
+  transform: translate(-50%, -50%);
+  background: url('/assets/images/left-arrow.svg');
+}
