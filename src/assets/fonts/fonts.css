@@ -2,5 +2,5 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('InterVariableFont.ttf') format("truetype");
+  src: url('./InterVariableFont.ttf') format('truetype');
 }

@@ -1,6 +1,24 @@
-export const pageData: Record<string, Record<string, string>> = {
+import { Context } from 'vm';
+
+export const pageData: Context = {
   '/index.html': {
+    title: 'Главная',
     cssFile: '',
-    greetings: 'Как дела?'
+    name: 'sad'
   },
+  '/login.html': {
+    title: 'Вход',
+    // cssFile: './pages/login/login.css',
+    form: [
+      {
+        name: 'login',
+        label: 'Логин',
+        errorText: 'Неверный логин'
+      },
+      {
+        name: 'password',
+        label: 'Пароль',
+      }
+    ]
+  }
 };

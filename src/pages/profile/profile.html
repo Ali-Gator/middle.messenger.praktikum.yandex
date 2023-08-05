@@ -1,0 +1,40 @@
+{{#> head/head }}
+  <section class="profile">
+    <a class="link side-back" href="/index.html"></a>
+    <div class="profile__wrapper">
+      <button class="button upload-avatar profile__avatar" onclick="window.popup.showModal();">
+        <p class="upload-avatar__hint">Поменять аватар</p>
+      </button>
+      <h1 class="profile__title">Иван</h1>
+      <form class="profile-form profile__from">
+        <div class="profile-form__input-wrapper">
+          <label class="profile-form__label" for="login">Логин</label>
+          <input class="profile-form__input" type="text" name="login" id="login" placeholder="Логин"
+                 value="ivanivanov" disabled />
+        </div>
+        <div class="profile-form__input-wrapper">
+          <label class="profile-form__label" for="password">Пароль</label>
+          <input class="profile-form__input" type="password" name="password" id="password" placeholder="Пароль}"
+                 value="ivanivanov" />
+        </div>
+        <button class="button button_form profile-form__button">Сохранить</button>
+      </form>
+      <div class="profile__buttons-wrapper">
+        <button class="button profile__button">Изменить данные</button>
+        <button class="button profile__button">Изменить пароль</button>
+        <button class="button profile__button profile__button_type_danger">Выйти</button>
+      </div>
+    </div>
+  </section>
+{{/head/head}}
+<dialog class="popup" id="popup">
+  <h2 class="popup__title">Загрузите файл</h2>
+  <form class="popup-form popup__form">
+    <label class="popup-form__label" for="avatar">Выбрать файл на компьютере
+      <input class="popup-form__input" type="file" name="avatar" id="avatar" />
+    </label>
+    <button class="button button_form popup-form__button">Поменять</button>
+  </form>
+  <p class="popup__error">Нужно выбрать файл</p>
+</dialog>
+
