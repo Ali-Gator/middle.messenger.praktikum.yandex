@@ -6,6 +6,10 @@ export const pageData: Context = {
     cssFile: '/index.css',
     links: [
       {
+        href: '/pages/chat/chat.html',
+        text: 'Chat'
+      },
+      {
         href: '/pages/login/login.html',
         text: 'Login'
       },
@@ -25,6 +29,129 @@ export const pageData: Context = {
         href: '/pages/400/400.html',
         text: 'Error 400'
       },
+    ]
+  },
+  '/pages/chat/chat.html': {
+    title: 'Чат',
+    cssFile: '/pages/chat/chat.css',
+    profileLink: {
+      href: '/pages/profile/profile.html',
+      text: 'Мои данные',
+      class: 'chat__profile-link'
+    },
+    searchInput: {
+      name: 'search',
+      labelText: 'Поиск',
+      placeholder: 'Поиск',
+      classPrefix: 'contacts',
+      type: 'search'
+    },
+    contacts: [
+      {
+        contactName: 'Design Destroyer',
+        date: '12 Апр 2020',
+        isMe: true,
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+        newMessageCount: 4
+      },
+      {
+        contactName: 'Design',
+        date: 'Вчера',
+        isMe: true,
+        message: 'Так увлёкся работой',
+        newMessageCount: 4
+      },
+      {
+        contactName: 'Design Destroyer Destroyer',
+        date: '12 Апр 2020',
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+      },
+      {
+        contactName: 'Design Destroyer',
+        date: '1 мая 2020',
+        isMe: true,
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+        newMessageCount: 4,
+        isActive: true,
+      }, {
+        contactName: 'Design Destroyer',
+        date: '12 Апр 2020',
+        isMe: true,
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+        newMessageCount: 4
+      },
+      {
+        contactName: 'Design',
+        date: 'Вчера',
+        isMe: true,
+        message: 'Так увлёкся работой',
+        newMessageCount: 4
+      },
+      {
+        contactName: 'Design Destroyer Destroyer',
+        date: '12 Апр 2020',
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+      },
+      {
+        contactName: 'Design Destroyer',
+        date: '1 мая 2020',
+        isMe: true,
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+        newMessageCount: 4,
+        isActive: true,
+      }, {
+        contactName: 'Design Destroyer',
+        date: '12 Апр 2020',
+        isMe: true,
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+        newMessageCount: 4
+      },
+      {
+        contactName: 'Design',
+        date: 'Вчера',
+        isMe: true,
+        message: 'Так увлёкся работой',
+        newMessageCount: 4
+      },
+      {
+        contactName: 'Design Destroyer Destroyer',
+        date: '12 Апр 2020',
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+      },
+      {
+        contactName: 'Design Destroyer',
+        date: '1 мая 2020',
+        isMe: true,
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+        newMessageCount: 4,
+        isActive: true,
+      }, {
+        contactName: 'Design Destroyer',
+        date: '12 Апр 2020',
+        isMe: true,
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+        newMessageCount: 4
+      },
+      {
+        contactName: 'Design',
+        date: 'Вчера',
+        isMe: true,
+        message: 'Так увлёкся работой',
+        newMessageCount: 4
+      },
+      {
+        contactName: 'Design Destroyer Destroyer',
+        date: '12 Апр 2020',
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+      },
+      {
+        contactName: 'Design Destroyer',
+        date: '1 мая 2020',
+        isMe: true,
+        message: 'Так увлёкся работой по курсу, что совсем забыл его анонсировать',
+        newMessageCount: 4,
+        isActive: true,
+      }
     ]
   },
   '/pages/login/login.html': {

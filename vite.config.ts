@@ -10,6 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'src/index.html'),
+        chat: resolve(__dirname, 'src/pages/chat/chat.html'),
         login: resolve(__dirname, 'src/pages/login/login.html'),
         register: resolve(__dirname, 'src/pages/register/register.html'),
         profile: resolve(__dirname, 'src/pages/profile/profile.html'),

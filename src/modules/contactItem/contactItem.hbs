@@ -1,0 +1,24 @@
+<div class="contact {{#if isActive}}contact_active{{/if}}">
+  {{#if avatarSrc}}
+    <img src="{{avatarSrc}}" alt="avatar" class="contact__avatar" />
+  {{else}}
+    <span class="contact__avatar"></span>
+  {{/if}}
+  <div class="contact__text-wrapper">
+    <div class="contact__content-wrapper">
+      <p class="contact__title">{{contactName}}</p>
+      <p class="contact__date">{{date}}</p>
+    </div>
+    <div class="contact__content-wrapper">
+      <p class="contact__message">
+        {{# if isMe}}
+          <span class="contact__message-accent">Вы:</span>
+        {{/if}}
+        {{message}}
+      </p>
+      {{#if newMessageCount}}
+        <p class="contact__message-count">{{newMessageCount}}</p>
+      {{/if}}
+    </div>
+  </div>
+</div>

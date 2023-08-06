@@ -1,0 +1,20 @@
+{{#> head/head }}
+  <section class="chat">
+    <aside class="chat__aside-wrapper">
+      {{> link/link profileLink}}
+      <div class="contacts">
+        {{> input/input searchInput}}
+        <ul class="contacts__list-wrapper">
+          {{#each contacts}}
+            <li class="contacts__item">
+              {{> contactItem/contactItem this}}
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </aside>
+    <div class="chat__conversation chat__conversation_empty">
+      Выберите чат, чтобы начать общение
+    </div>
+  </section>
+{{/head/head}}
