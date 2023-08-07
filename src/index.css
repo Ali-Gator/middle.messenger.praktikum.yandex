@@ -2,7 +2,7 @@
 
 .index {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   flex-flow: column;
   gap: 12px;
 
