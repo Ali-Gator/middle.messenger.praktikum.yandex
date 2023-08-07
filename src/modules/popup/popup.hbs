@@ -1,0 +1,7 @@
+<dialog class="popup" id="{{id}}">
+  {{> title/title h2}}
+  {{> @partial-block}}
+  {{#if error}}
+    <p class="popup__error">{{error}}</p>
+  {{/if}}
+</dialog>

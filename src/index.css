@@ -1,0 +1,12 @@
+@import '/components/link/link.css';
+
+.index {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  gap: 12px;
+
+  & a {
+    font-size: 16px;
+  }
+}

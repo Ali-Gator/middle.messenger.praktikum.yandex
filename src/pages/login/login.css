@@ -1,0 +1,24 @@
+@import '/modules/form/form.css';
+@import '/components/button/button.css';
+@import '/components/link/link.css';
+
+.login {
+  width: 340px;
+  padding: 50px 30px 30px;
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.14);
+
+  & .login__title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  & .login__form {
+    margin-top: 40px;
+  }
+
+  & .login__link {
+    margin-top: 16px;
+  }
+}

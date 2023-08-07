@@ -1,0 +1,22 @@
+.button {
+  cursor: pointer;
+}
+
+.button_form {
+  font-size: 13px;
+  font-weight: 500;
+  width: 280px;
+  padding: 12px;
+  text-align: center;
+  color: var(--white);
+  border-radius: 15px;
+  background: var(--main-color);
+}
+
+.button:hover, .link:hover {
+  filter: brightness(95%);
+}
+
+.button:active, .link:active {
+  filter: brightness(90%);
+}

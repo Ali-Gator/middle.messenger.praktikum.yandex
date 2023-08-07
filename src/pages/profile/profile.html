@@ -1,0 +1,21 @@
+{{#> head/head }}
+  <section class="profile">
+    {{> link/link backLink }}
+    <div class="profile__wrapper">
+      <button class="button upload-avatar profile__avatar" onclick="window['change_avatar'].showModal();">
+        <p class="upload-avatar__hint">Поменять аватар</p>
+      </button>
+      {{> title/title h1}}
+      {{> form/form form}}
+      <ul class="profile__buttons-wrapper">
+        {{#each buttons}}
+          {{> button/button this}}
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+  {{#>popup/popup popup}}
+    {{> form/form form}}
+  {{/popup/popup}}
+{{/head/head}}
+

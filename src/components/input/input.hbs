@@ -1,0 +1,13 @@
+<div class="{{classPrefix}}__input-wrapper">
+  <label class="{{classPrefix}}__label" for={{name}}>{{labelText}}</label>
+  <input class="{{classPrefix}}__input"
+         {{#if type}}type="{{type}}"{{/if}}
+         name="{{name}}"
+         id="{{name}}"
+    {{#if placeholder}} placeholder="{{placeholder}}"{{/if}}
+    {{#if value}}value="{{value}}"{{/if}}
+  />
+  {{#if errorText}}
+    <span class="{{classPrefix}}__error">{{errorText}}</span>
+  {{/if}}
+</div>
